@@ -49,4 +49,5 @@ class User extends Model {
   }
 }
 
+console.log("Hola");
 module.exports = User;
