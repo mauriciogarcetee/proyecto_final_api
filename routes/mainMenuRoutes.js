@@ -3,7 +3,7 @@ const router = express.Router();
 const { expressjwt: checkJwt } = require("express-jwt");
 const bookingController = require("../controllers/bookingController");
 const checkUserPermissions = require("../middlewares/checkUserPermissions");
-const checkBookingPermissions = require("../middlewares/checkBookingPermissions");
+const mainMenuController = require("../controllers/mainMenuController");
 
 router.get("", mainMenuController.getMainMenu);
 
