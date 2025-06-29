@@ -72,7 +72,7 @@ const deleteBooking = async (req, res) => {
       return res.status(404).json({ error: "Booking not found" });
     }
     await booking.destroy();
-    res.status(204).send();
+    res.json({ message: "Booking deleted" });
   } catch (error) {
     console.error("Error deleting booking:", error);
     res.status(500).json({ error: "Internal server error" });
