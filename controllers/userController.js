@@ -60,7 +60,7 @@ async function updateUser(req, res, next) {
   }
 }
 async function deleteUser(req, res, next) {
-  const user = await User.findByPk(req.params.id);
+  const user = await User.findByPk(req.params.Id);
   try {
     if (user == null) {
       res.json({ message: "User not found" });

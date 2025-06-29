@@ -28,7 +28,7 @@ router.patch(
   bookingController.updateBooking
 );
 router.delete(
-  "/bookings/:id",
+  "/bookings/:Id",
   checkJwt({ secret: process.env.JWT_SECRET, algorithms: ["HS256"] }),
   checkBookingPermissions,
   bookingController.deleteBooking
